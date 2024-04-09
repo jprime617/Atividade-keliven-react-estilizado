@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    padding: 20px 70px;
+    align-items: center;
+}
+
+.header img{
+    width: 50px;
+}
+
+.header {
+    background-color: blanchedalmond;
+    justify-content: space-between;
+}
+
+.header .navbar {
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.header .navbar a{
+    color: chocolate;
+    text-decoration: none;
+}
+
+.header li{
+    list-style: none;
+}
+
+.footer{
+    background-color: black;
+    gap: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.footer img{
+    filter: invert(100%);
+    width: 200px;
+}
+
+.two-column{
+    width: 50vw;
+}
+
+.banner{
+    background-color: antiquewhite;
+
+}
+
+button{
+    background-color: chocolate;
+    color: black;
+    padding: 15px;
+    font: 20px;
+    width: 180px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.one-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    /* padding: 40px; */
+}
+
+.inner-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-direction: column;
+    height: 600px;
+}
+
+.inner-container img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transition: transform 1.2s;
+}
+
+.inner-container img:hover{
+    transform: scale(1.7);
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        padding: 20px 70px;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .two-column{
+        width: 100vw;
+        display: flex;
+    }
+    button{
+        width: 100px;
+        font-size: 16px;
+    }
+    .inner-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner img{
+        width: 50vw;
+        height: fit-content;
+    }
+    .inner-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 2000px;
+    }
+    .footer{
+        bottom: 0;
+        left: 0;
+    }
+}
